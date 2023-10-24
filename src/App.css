@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+* {
+  color: #fcfcfc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main > section {
+  min-height: 500px;
+  height: auto;
+  padding: var(--section-padding-y) var(--section-padding-y);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+main section.hero {
+  background-color: black;
   color: white;
+  min-height: 500px;
+  height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(./assets/IMG_9896.jpg); */
 }
 
-.App-link {
-  color: #61dafb;
+main section.hero h2 {
+  font-size: 58px;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main section.hero h4 {
+  font-size: 26px;
+  max-width: 800px;
+}
+
+/* For all mobile users only */
+@media only screen and (max-width: 768px) {
+  main section.hero {
+    height: auto;
+    padding-left: 36px;
+    padding-right: 36px;
   }
-  to {
-    transform: rotate(360deg);
+
+  main section.hero h2 {
+    font-size: 50px;
+  }
+  
+  main section.hero h4 {
+    font-size: 20px;
   }
 }
