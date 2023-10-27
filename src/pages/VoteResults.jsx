@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-import { PieChart } from "react-minimal-pie-chart";
 
 import Stack from "../components/common/Stack";
 import { generateRandomColor, generateIdFromName } from "../utility";
@@ -10,12 +9,13 @@ import { getSingleCategory } from "../redux/actions";
 import PlainTable from "../components/PlainTable";
 import TextInput from "../components/common/TextInput";
 import Button from "../components/common/Button";
+import Chart from "../components/common/Chart";
 
 function VoteResults() {
   const params = useParams();
   const [categoryInfo, setCategoryInfo] = useState(null);
 
-  const [skillPieWidth, skillPieHeight] = [240, 240];
+  const [pieWidth, pieHeight] = [440, 320];
 
   useEffect(() => {
     (async () => {
@@ -71,39 +71,18 @@ function VoteResults() {
         }}
       >
         <div className="flex rounded-full">
-          <PieChart
-            totalValue={100}
-            radius={skillPieWidth / 2 - 1.5}
-            // segmentsShift={(index) => (index !== 0 ? 0.3 : 0.3)}
-            viewBoxSize={[skillPieWidth, skillPieHeight]}
-            center={[skillPieWidth / 2, skillPieHeight / 2]}
-            startAngle={-90}
-            animate
-            // lengthAngle={90}
-            label={({ dataEntry }) => Math.round(dataEntry.percentage) + "%"}
-            labelStyle={{
-              fontSize: "14px",
-              fill: "white",
-            }}
-            paddingAngle={1}
-            lineWidth={75}
-            data={categoryInfo?.candidates.map((each, _, arr) => {
-              const totalVotes = arr.reduce((a, b) => {
-                return a + Number(b.votes || 0);
-              }, 0);
-
-              const percentage = Math.round(
-                (each.votes / Math.max(totalVotes, 1)) * 100
-              );
-
-              // console.log(each?.name, totalVotes, percentage);
+          <Chart
+            useGoogle={true}
+            is3D={true}
+            width={pieWidth}
+            height={pieHeight}
+            data={categoryInfo?.candidates.map((each) => {
               return {
                 title: each?.name,
-                value: percentage,
+                value: each?.votes,
                 color: generateRandomColor(),
               };
             })}
-            // style={{ height: "58px" }}
           />
         </div>
 
