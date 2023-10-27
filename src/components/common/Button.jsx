@@ -10,12 +10,13 @@ const Button = ({
 }) => {
   return !href ? (
     <button
-      className={mergeClassNames("rounded-md text-black bg-white", className)}
+      className={mergeClassNames("inline-flex items-center text-black bg-white", className)}
       style={{
         textTransform: "uppercase",
         padding: "12px 24px",
         letterSpacing: "1px",
         fontWeight: 500,
+        textAlign: "center",
         ...style,
       }}
       {...props}
@@ -25,7 +26,7 @@ const Button = ({
   ) : (
     <a
       href={href}
-      className={mergeClassNames("rounded-md text-black bg-white", className)}
+      className={mergeClassNames("inline-flex justify-center items-center text-black bg-white", className)}
       style={{
         textAlign: "center",
         textTransform: "uppercase",

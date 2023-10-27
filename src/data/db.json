@@ -1,0 +1,708 @@
+{
+  "campaigns": [
+    {
+      "id": "12345",
+      "name": "2023 Final Year Media Campaign",
+      "isOngoing": true,
+      "association": "media-school",
+      "categories": [
+        {
+          "id": "category-1",
+          "name": "Best Media Student I",
+          "description": "The special category is reserved for student with magic hand in the department of catering.",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 5,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 300,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke 2",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            },
+            {
+              "id": 8,
+              "name": "Adegoke Aderonke 3",
+              "avatar": "",
+              "votes": 10,
+              "phone": "00020202002"
+            },
+            { "id": 9, "name": "Adegoke Aderonke 4", "avatar": "", "votes": 5 }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-2",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-3",
+          "name": "Best Media Student III",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 6,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 7,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-4",
+          "name": "Best Media Student IV",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-5",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        }
+      ]
+    },
+    {
+      "id": "13345",
+      "name": "2023 Final Year Media Campaign II",
+      "isOngoing": true,
+      "association": "media-school",
+      "categories": [
+        {
+          "id": "category-1",
+          "name": "Best Media Student I",
+          "description": "The special category is reserved for student with magic hand in the department of catering.",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 5,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 300,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke 2",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            },
+            {
+              "id": 8,
+              "name": "Adegoke Aderonke 3",
+              "avatar": "",
+              "votes": 10,
+              "phone": "00020202002"
+            },
+            { "id": 9, "name": "Adegoke Aderonke 4", "avatar": "", "votes": 5 }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-2",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-3",
+          "name": "Best Media Student III",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 6,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 7,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        }
+      ]
+    },
+    {
+      "id": "12345",
+      "name": "2023 Final Year Media Campaign",
+      "isOngoing": true,
+      "association": "media-school",
+      "categories": [
+        {
+          "id": "category-1",
+          "name": "Best Media Student I",
+          "description": "The special category is reserved for student with magic hand in the department of catering.",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 5,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 300,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke 2",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            },
+            {
+              "id": 8,
+              "name": "Adegoke Aderonke 3",
+              "avatar": "",
+              "votes": 10,
+              "phone": "00020202002"
+            },
+            { "id": 9, "name": "Adegoke Aderonke 4", "avatar": "", "votes": 5 }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-2",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-3",
+          "name": "Best Media Student III",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 6,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 7,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-4",
+          "name": "Best Media Student I",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": 2
+        },
+        {
+          "id": "campaign-5",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": 5
+        }
+      ]
+    },
+    {
+      "id": "13345",
+      "name": "2023 Final Year Media Campaign II",
+      "isOngoing": true,
+      "association": "media-school",
+      "categories": [
+        {
+          "id": "category-1",
+          "name": "Best Media Student I",
+          "description": "The special category is reserved for student with magic hand in the department of catering.",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 5,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 300,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke 2",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            },
+            {
+              "id": 8,
+              "name": "Adegoke Aderonke 3",
+              "avatar": "",
+              "votes": 10,
+              "phone": "00020202002"
+            },
+            { "id": 9, "name": "Adegoke Aderonke 4", "avatar": "", "votes": 5 }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-2",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        },
+        {
+          "id": "campaign-3",
+          "name": "Best Media Student III",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "12345",
+          "candidates": [
+            {
+              "id": 6,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 7,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": null
+        }
+      ]
+    },
+    {
+      "id": "23457",
+      "name": "2022 Final Year Media Campaign",
+      "description": "",
+      "isOngoing": false,
+      "association": "media-school",
+      "categories": [
+        {
+          "id": "category-1",
+          "name": "Best Media Student I",
+          "description": "The special category is reserved for student with magic hand in the department of catering.",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "23456",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 5,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 300,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke 2",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            },
+            {
+              "id": 8,
+              "name": "Adegoke Aderonke 3",
+              "avatar": "",
+              "votes": 10,
+              "phone": "00020202002"
+            },
+            { "id": 9, "name": "Adegoke Aderonke 4", "avatar": "", "votes": 5 }
+          ],
+          "winner_id": 2
+        },
+        {
+          "id": "category-2",
+          "name": "Best Media Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "23456",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": 5
+        },
+        {
+          "id": "category-3",
+          "name": "Best Media Student III",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "23456",
+          "candidates": [
+            {
+              "id": 6,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 1,
+              "phone": "00020202002"
+            },
+            {
+              "id": 7,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": 6
+        }
+      ]
+    },
+    {
+      "id": "23456",
+      "name": "2023 Final Year Catering Campaign",
+      "description": "",
+      "isOngoing": false,
+      "association": "catering-school",
+      "categories": [
+        {
+          "id": "category-1",
+          "name": "Best Catering Student I",
+          "description": "The special category is reserved for student with magic hand in the department of catering.",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "23456",
+          "candidates": [
+            {
+              "id": 1,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 5,
+              "phone": "00020202002"
+            },
+            {
+              "id": 2,
+              "name": "Charles Micheal Majeed",
+              "avatar": "",
+              "votes": 300,
+              "phone": "00020202002"
+            },
+            {
+              "id": 3,
+              "name": "Adegoke Aderonke 2",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            },
+            {
+              "id": 8,
+              "name": "Adegoke Aderonke 3",
+              "avatar": "",
+              "votes": 10,
+              "phone": "00020202002"
+            },
+            { "id": 9, "name": "Adegoke Aderonke 4", "avatar": "", "votes": 5 }
+          ],
+          "winner_id": 2
+        },
+        {
+          "id": "category-2",
+          "name": "Best Catering Student II",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "23456",
+          "candidates": [
+            {
+              "id": 4,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            },
+            {
+              "id": 5,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 20,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": 5
+        },
+        {
+          "id": "category-3",
+          "name": "Best Catering Student III",
+          "description": "Kindly choose the campaign you want to support. All voting activities are currently done on WhatsApp",
+          "total": 10,
+          "season": "10/2023",
+          "campaign_id": "23456",
+          "candidates": [
+            {
+              "id": 6,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 1,
+              "phone": "00020202002"
+            },
+            {
+              "id": 7,
+              "name": "Adegoke Aderonke",
+              "avatar": "",
+              "votes": 0,
+              "phone": "00020202002"
+            }
+          ],
+          "winner_id": 6
+        }
+      ]
+    }
+  ]
+}

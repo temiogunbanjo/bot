@@ -2,8 +2,8 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="flex flex-row flex-wrap items-center justify-between py-5 px-8 border--b">
-      <div className="flex flex-col">
+    <header className="flex flex-col sm:flex-row flex-wrap items-center justify-between py-5 px-8 border--b">
+      <div className="flex flex-col items-center sm:items-start">
         <h1
           className="inline-block uppercase text-3xl font-bold"
           // style={{ letterSpacing: "0.5px" }}
@@ -18,9 +18,9 @@ function Header() {
 
       <nav className="my-5">
         <ul className="flex flex-row space-x-8 font-medium">
-          <li>Home</li>
-          <li>Ongoing Votes</li>
-          <li>Previous Winners</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/campaigns">Ongoing Campaigns</a></li>
+          <li><a href="/previous-winners">Previous Winners</a></li>
         </ul>
       </nav>
     </header>

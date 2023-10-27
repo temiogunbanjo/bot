@@ -5,13 +5,20 @@
 main > section {
   min-height: 500px;
   height: auto;
-  padding: var(--section-padding-y) var(--section-padding-y);
+  padding: var(--section-padding-y) 5%;
+}
+
+main > section, header, footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1960px;
 }
 
 main section.hero {
   background-color: black;
   color: white;
   min-height: 500px;
+  max-height: 1440px;
   height: calc(100vh - 100px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,12 +36,41 @@ main section.hero h2 {
 }
 
 main section.hero h4 {
-  font-size: 26px;
+  font-size: 24px;
   max-width: 800px;
+}
+
+.main-subtitle {
+  line-height: 1.8 !important;
+  font-size: 0.875rem;
+}
+
+.vote-candidate {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.vote-candidate .candidate-actions {
+  left: 0;
+  bottom: -300%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.vote-candidate:hover .candidate-actions {
+  opacity: 1;
+  bottom: 0;
+  left: 0;
 }
 
 /* For all mobile users only */
 @media only screen and (max-width: 768px) {
+  main > section {
+    min-height: 500px;
+    height: auto;
+    padding: var(--section-padding-y) var(--section-padding-y);
+  }
+
   main section.hero {
     height: auto;
     padding-left: 36px;
@@ -44,7 +80,7 @@ main section.hero h4 {
   main section.hero h2 {
     font-size: 50px;
   }
-  
+
   main section.hero h4 {
     font-size: 20px;
   }

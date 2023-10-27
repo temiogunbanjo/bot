@@ -12,6 +12,10 @@ import NoPage from "./components/404Page";
 import MainLayout from "./layouts/MainLayout";
 
 import HomePage from "./pages/Home";
+import Campaigns from "./pages/Campaigns";
+import ViewCampaign from "./pages/ViewCampaign";
+import VoteResults from "./pages/VoteResults";
+import PreviousWinners from "./pages/PreviousWinners";
 
 // Other assets
 import "./App.css";
@@ -24,6 +28,13 @@ function App() {
           <Switch>
             <Route exact path="/" element={<MainLayout />}>
               <Route index element={<HomePage />} />
+              <Route path="previous-winners" element={<PreviousWinners />} />
+              <Route path="campaigns" element={<Campaigns />} />
+              <Route path="campaigns/:campaignId" element={<ViewCampaign />} />
+              <Route
+                path="campaigns/:campaignId/category/:categoryId"
+                element={<VoteResults />}
+              />
             </Route>
 
             <Route path="*" element={<NoPage />} />

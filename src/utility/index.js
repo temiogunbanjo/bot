@@ -34,3 +34,30 @@ export const getInitials = (phrase) => {
       .charAt(0)
   );
 };
+
+export const generateIdFromName = (name) => {
+  return name
+    ?.trim()
+    ?.toLowerCase()
+    ?.replace(/[^0-9a-z]/gi, "-");
+};
+
+export const generateRandomColor = () => {
+  const MAX = 205;
+  const MIN = 10;
+  const redValue = Math.floor(Math.random() * MAX) + MIN; // 10 - 205
+  const greenValue = Math.floor(Math.random() * MAX) + MIN; // 10 - 205
+  const blueValue = Math.floor(Math.random() * MAX) + MIN; // 10 - 205
+
+  return `rgb(${redValue}, ${greenValue}, ${blueValue})`
+}
+
+export const sanitizePayload = (payload) => {
+  const sanitizedPayload = {};
+  Object.entries(payload).forEach(([key, value]) => {
+    if (!!value || typeof value === "boolean") {
+      sanitizedPayload[key] = value;
+    }
+  });
+  return sanitizedPayload;
+};
