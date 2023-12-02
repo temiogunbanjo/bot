@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 import Stack from "../components/common/Stack";
 import Button from "../components/common/Button";
@@ -10,22 +11,23 @@ import VotingCandidate from "../components/cards/VotingCandidate";
 
 // import noSearchAnimation from "../assets/lotties/animation_no_search.json";
 import { generateIdFromName } from "../utility";
-import { getAllCampaigns, getRecentWinners } from "../redux/actions";
+import { getRecentWinners } from "../redux/actions";
+import { getAllCampaigns } from "../redux/actions/campaign.action";
 
 function Home() {
   const navigate = useNavigate();
-  const [campaigns, setCampaigns] = useState([]);
+  const dispatch = useDispatch();
   const [recentWinners, setRecentWinners] = useState([]);
 
+  const campaigns = useSelector((store) => store.Campaign.campaigns?.data);
+
   useEffect(() => {
+    dispatch(getAllCampaigns({ isOngoing: true }));
     (async () => {
-      const res = await getAllCampaigns({ isOngoing: true });
       const res2 = await getRecentWinners();
-      // console.log(res2);
       setRecentWinners(res2);
-      setCampaigns(res);
     })();
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
@@ -75,11 +77,12 @@ function Home() {
                     return a.concat(b?.candidates);
                   }, [])?.length
                 }
+                categories={eachCampaign?.categories?.length}
                 sx={{
                   flexGrow: 1,
                   margin: "0.625rem",
                   width: "calc(50% - 1.25rem)",
-                  minWidth: "180px"
+                  minWidth: "180px",
                 }}
                 onClick={(ev) => {
                   navigate(

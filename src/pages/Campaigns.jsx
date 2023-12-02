@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import { useDispatch, useSelector } from "react-redux";
 
 import Stack from "../components/common/Stack";
 import Button from "../components/common/Button";
@@ -10,21 +11,18 @@ import TextInput from "../components/common/TextInput";
 // import Lottie from "../components/common/Lottie";
 // import noSearchAnimation from "../assets/lotties/animation_no_search.json";
 
-import { getAllCampaigns } from "../redux/actions";
+import { getAllCampaigns } from "../redux/actions/campaign.action";
 import { generateIdFromName } from "../utility";
 
 function Campaigns() {
   const navigate = useNavigate();
-  const params = useParams();
+  const dispatch = useDispatch();
 
-  const [campaigns, setCampaigns] = useState([]);
+  const campaigns = useSelector((store) => store.Campaign.campaigns?.data);
 
   useEffect(() => {
-    (async () => {
-      const res = await getAllCampaigns({ isOngoing: true });
-      setCampaigns(res);
-    })();
-  }, [params?.campaignId]);
+    dispatch(getAllCampaigns({ isOngoing: true }));
+  }, [dispatch]);
 
   return (
     <>
@@ -111,7 +109,8 @@ function Campaigns() {
                     return a.concat(b?.candidates);
                   }, [])?.length
                 }
-                status={eachCampaign?.isOngoing}
+                categories={eachCampaign?.categories?.length}
+                status={eachCampaign?.ongoing}
                 sx={{
                   margin: "0.75rem 0.75rem",
                   width: "calc(33.3% - 1.5rem)",

@@ -2,7 +2,14 @@ import React from "react";
 import { BsBarChartFill } from "react-icons/bs";
 import { mergeClassNames } from "../../utility";
 
-function Campaign({ title = "", candidates = 0, status, sx = {}, ...others }) {
+function Campaign({
+  title = "",
+  candidates = 0,
+  categories = 0,
+  status,
+  sx = {},
+  ...others
+}) {
   return (
     <div
       className="flex flex-col p-8 bg-yellow-600 hover:bg-yellow-700 cursor-pointer"
@@ -19,7 +26,11 @@ function Campaign({ title = "", candidates = 0, status, sx = {}, ...others }) {
       )}
       <BsBarChartFill fontSize={48} style={{ marginBottom: "15px" }} />
       <h3 className="font-semibold my-1 text-lg line-clamp-3">{title}</h3>
-      <span className="text-sm">{`${candidates} Candidates`}</span>
+      <span className="text-sm">{`${categories} ${
+        categories.length > 1 ? "Categories" : "Category"
+      } · ${candidates} ${
+        candidates.length > 1 ? "Candidates" : "Candidate"
+      }`}</span>
     </div>
   );
 }

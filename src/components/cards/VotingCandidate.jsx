@@ -4,14 +4,34 @@ import { SlBadge as BadgeIcon } from "react-icons/sl";
 import Stack from "../common/Stack";
 import Button from "../common/Button";
 
+const Avatar = ({ src, alt }) => {
+  return !src ? (
+    <div
+      className={`flex items-center justify-center p-1 rounded-full bg-slate-500 shadow-lg`}
+      style={{ width: "150px", height: "150px" }}
+    >
+      <BsPerson fontSize={38} />
+    </div>
+  ) : (
+    <img
+      src={src}
+      alt={alt}
+      className={`flex items-center justify-center p-1 rounded-full bg-slate-500 shadow-md`}
+      style={{ width: "150px", height: "150px" }}
+    />
+  );
+};
+
 function VotingCandidate({
   category,
   name = "",
   votes = 0,
   color = 0,
+  avatar1 = null,
   avatar2 = "",
   sx = {},
   canVote = false,
+  voteUrl = "#",
   phone = null,
   email = null,
   disabledActions = false,
@@ -36,16 +56,10 @@ function VotingCandidate({
       <div
         className={`relative flex flex-grow items-center justify-center border border-b-0 border-slate-400 p-8 bg-slate-300`}
       >
-        <div
-          className={`flex items-center justify-center p-1 rounded-full bg-slate-500 shadow-md`}
-          style={{ width: "150px", height: "150px" }}
-        >
-          <BsPerson fontSize={38} />
-        </div>
-
+        {<Avatar src={avatar1} alt={name} />}
         {avatar2 && (
           <div
-            className="animate-zoom absolute bottom-6 right-6 flex items-center justify-center p-1 rounded-full bg-yellow-500 shadow-lg"
+            className="absolute bottom-6 right-6 flex items-center justify-center p-1 rounded-full bg-yellow-500 shadow-lg"
             style={{ width: "50px", height: "50px", zIndex: "+599" }}
           >
             {/* <BsPerson fontSize={20} /> */}
@@ -84,6 +98,7 @@ function VotingCandidate({
             )}
             {canVote && (
               <Button
+                href={voteUrl}
                 text={`vote 4 ${name}`}
                 className="rounded-md mx-1 my-1 text-xs capitalize"
                 style={{ ...styles.actionButton }}

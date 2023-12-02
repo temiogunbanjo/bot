@@ -14,18 +14,24 @@ import { generateIdFromName } from "../utility";
 import { getRecentWinners } from "../redux/actions";
 import TextInput from "../components/common/TextInput";
 import Placeholder from "../components/Placeholder";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllSchools } from "../redux/actions/general.action";
 
 function PreviousWinners() {
+  const dispatch = useDispatch();
   const [categories, setCategories] = useState([]);
   const [association, setAssociation] = useState("");
 
+  const schools = useSelector((store) => store.General.schools?.data);
+
   useEffect(() => {
+    dispatch(getAllSchools({ isOngoing: true }));
     (async () => {
       const res = await getRecentWinners(association);
       console.log(res);
       setCategories(res);
     })();
-  }, [association]);
+  }, [association, dispatch]);
 
   return (
     <>
@@ -74,11 +80,13 @@ function PreviousWinners() {
                 onChange={(ev) => setAssociation(ev.target.value)}
               >
                 <option value={""}>All Schools</option>
-                <option value={"media-school"}>Media School</option>
-                <option value={"fashion-school"}>Fashion School</option>
-                <option value={"health-school"}>Health School</option>
-                <option value={"cosmetology-school"}>Cosmetology School</option>
-                <option value={"catering-school"}>Catering School</option>
+                {schools &&
+                  schools.length > 0 &&
+                  schools.map((eachSchool, index) => (
+                    <option key={index} value={eachSchool?.id}>
+                      {eachSchool?.name}
+                    </option>
+                  ))}
               </select>
             </div>
 
