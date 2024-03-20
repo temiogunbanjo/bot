@@ -30,13 +30,14 @@ main section.hero {
 }
 
 main section.hero h2 {
-  font-size: 58px;
+  font-size: 56px;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
 main section.hero h4 {
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 1.8 !important;
   max-width: 800px;
 }
 
